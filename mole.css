@@ -1,0 +1,70 @@
+body {
+    font-family: 'Montserrat', sans-serif; /* Elegant and modern font */
+    text-align: center;
+    background: url("./assets/imgs/whack-a-mole.jpg");
+    background-size: cover;
+    color: #f5f5f5; /* Light font color for contrast */
+}
+
+#board {
+    height: 600px;
+    width: 510px;
+    background: url("./assets/imgs/soil.png");
+    background-size: cover;
+    border: 3px solid #f0e68c; /* Khaki colored border for a warm look */
+    border-radius: 25px;
+    margin: -95px 90px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.6); /* Adds depth */
+}
+
+#board div {
+    width: 170px;
+    height: 170px;
+    background-image: url("assets/imgs/pipe.png");
+    background-size: cover;
+    border-radius: 12px; /* Rounded tiles for a softer look */
+}
+
+#board img {
+    height: 100px;
+    width: 100px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    transition: transform 0.2s ease-in-out; /* Smooth scaling animation */
+}
+
+#board img:hover {
+    transform: scale(1.1); /* Slightly enlarge image on hover */
+}
+
+#playButton {
+    height: 200px !important;
+    width: 200px !important;
+    display: flex;
+    margin: auto auto;
+    flex-wrap: wrap;
+    transition: transform 0.3s ease;
+}
+
+#playButton:hover {
+    transform: scale(1.05); /* Enlarge play button on hover */
+}
+
+.game-over {
+    color: #730101  !important; 
+    font-family: 'Roboto', sans-serif; /* Modern and bold font */
+
+}
+
+#score {
+    font-family: 'Poppins', sans-serif; /* Elegant and modern font */
+    font-size: 22px;
+    color: #ffd700; /* Gold color for the score */
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5); /* Subtle glow for text */
+}
